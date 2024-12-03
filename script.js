@@ -20,12 +20,12 @@ function convertToRoman(num) {
 
 	for(const [symbol, value] of romanNumerals) {
 		while(num >= value) {
-			result += value;
+			result += symbol;
 			num -= value
 		}
 		
 	}
-	return result
+	return result;
 	
  
 }
